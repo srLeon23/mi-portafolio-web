@@ -137,8 +137,9 @@ const App: React.FC = () => {
           >
             <div className={`absolute -inset-4 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-[3rem] blur-2xl opacity-20 transition duration-1000`}></div>
             <div className={`relative w-72 h-80 md:w-[420px] md:h-[500px] rounded-[2.5rem] overflow-hidden border-4 p-2 transition-transform duration-700 hover:scale-[1.02] shadow-2xl ${isDarkMode ? 'bg-slate-900 border-slate-800' : 'bg-white border-blue-100 shadow-blue-200/50'}`}>
+               {/* CORREGIDO: src sin la barra inicial / para que funcione en GitHub Pages */}
                <img 
-                 src="/Leonardo.png" 
+                 src="Leonardo.png" 
                  alt="Leonardo E. Muñoz" 
                  className="w-full h-full object-cover rounded-[2rem] bg-slate-200"
                  onError={(e) => {
@@ -210,11 +211,11 @@ const App: React.FC = () => {
                 
                 <div className={`p-8 md:p-10 rounded-3xl border transition-all flex flex-col md:flex-row gap-8 items-start ${isDarkMode ? 'bg-[#1e293b]/20 border-slate-800 hover:border-blue-500/30' : 'bg-white border-blue-100 shadow-xl shadow-blue-200/20 hover:border-blue-300'}`}>
                   <div className={`w-20 h-20 md:w-24 md:h-24 rounded-2xl border shrink-0 overflow-hidden flex items-center justify-center p-2 ${isDarkMode ? 'bg-slate-800 border-slate-700' : 'bg-blue-50 border-blue-100 shadow-inner'}`}>
-                    {/* Aquí está el cambio clave para las imágenes: aceptamos http O rutas relativas (/) */}
-                    {(exp.logo && (exp.logo.startsWith('http') || exp.logo.startsWith('/'))) ? (
+                    {/* CORREGIDO: Simplificamos la condición para que acepte tus nombres de archivo sin / */}
+                    {exp.logo ? (
                       <img src={exp.logo} alt={exp.company} className="w-full h-full object-contain" />
                     ) : (
-                      <span className="text-3xl font-black text-blue-600">{exp.logo || exp.company[0]}</span>
+                      <span className="text-3xl font-black text-blue-600">{exp.company[0]}</span>
                     )}
                   </div>
                   

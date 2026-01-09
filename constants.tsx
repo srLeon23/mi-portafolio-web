@@ -19,7 +19,7 @@ export const PORTFOLIO_DATA: Record<string, PortfolioData> = {
           "Elaboración de historias de usuario bajo criterios INVEST y definición de criterios de aceptación.",
           "Gestión de tiempos, herramientas y nivelación de conocimientos dentro del equipo QA."
         ],
-        logo: "/ACL.jpg"
+        logo: "ACL.jpg"  // <-- CORREGIDO (sin /)
       },
       {
         company: "Test Group S.A.",
@@ -30,7 +30,7 @@ export const PORTFOLIO_DATA: Record<string, PortfolioData> = {
           "Uso de herramientas de CI/CD y calidad como Jenkins, JMeter y SonarQube Cloud.",
           "Pruebas de API utilizando Postman."
         ],
-        logo: "/TestG.png" 
+        logo: "TestG.png" // <-- CORREGIDO (sin /)
       },
       {
         company: "Soluciones (AVOS Tech Company)",
@@ -41,7 +41,7 @@ export const PORTFOLIO_DATA: Record<string, PortfolioData> = {
           "Desarrollo de sistemas de automatización internos.",
           "Elaboración de manuales técnicos para Azure OpenAI usando Python."
         ],
-        logo: "/AVOS.jpg"
+        logo: "AVOS.jpg" // <-- CORREGIDO (sin /)
       }
     ],
     skills: [
@@ -108,7 +108,7 @@ export const PORTFOLIO_DATA: Record<string, PortfolioData> = {
           "Creation of user stories following INVEST criteria and defining acceptance criteria.",
           "Time management, tool selection, and knowledge leveling within the QA team."
         ],
-        logo: "/ACL.jpg"
+        logo: "ACL.jpg" // <-- CORREGIDO (sin /)
       },
       {
         company: "Test Group S.A.",
@@ -119,7 +119,7 @@ export const PORTFOLIO_DATA: Record<string, PortfolioData> = {
           "Utilized CI/CD and quality tools such as Jenkins, JMeter, and SonarQube Cloud.",
           "API testing using Postman."
         ],
-        logo: "/TestG.png"
+        logo: "TestG.png" // <-- CORREGIDO (sin /)
       },
       {
         company: "Soluciones (AVOS Tech Company)",
@@ -130,7 +130,7 @@ export const PORTFOLIO_DATA: Record<string, PortfolioData> = {
           "Development of internal automation systems.",
           "Creation of technical manuals for Azure OpenAI using Python."
         ],
-        logo: "/AVOS.jpg"
+        logo: "AVOS.jpg" // <-- CORREGIDO (sin /)
       }
     ],
     skills: [

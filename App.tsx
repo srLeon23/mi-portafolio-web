@@ -60,7 +60,7 @@ const App: React.FC = () => {
             className="flex items-center gap-3 group cursor-default"
           >
             <img 
-              src="/Logo.png" 
+              src="Logo.png" 
               alt="Logo LM" 
               className="w-10 h-10 rounded-xl shadow-lg shadow-blue-500/30 group-hover:rotate-6 transition-transform object-cover bg-white"
             />
